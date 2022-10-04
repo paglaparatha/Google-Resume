@@ -6,6 +6,16 @@
   -webkit-print-color-adjust: exact;
   -webkit-filter: opacity(1);
   color: #5f6368;
+  box-sizing: border-box;
+}
+
+*:not([contenteditable="true"]) {
+  user-select: none;
+}
+
+*[contenteditable="true"] {
+  background: whitesmoke;
+  outline: 1px solid #1a0dab;
 }
 
 a {
@@ -130,9 +140,9 @@ main {
 }
 
 footer {
-    background: #f2f2f2;
-    padding: 12px 0;
-    margin-top: 1rem;
+  background: #f2f2f2;
+  padding: 12px 0;
+  margin-top: 1rem;
   .circle {
     background: #70757a;
     border-radius: 100%;
@@ -144,8 +154,8 @@ footer {
   }
 
   hr {
-      height: 1px;
-      width: 100%;
-      background: #dadce0;
+    height: 1px;
+    width: 100%;
+    background: #dadce0;
   }
 }
